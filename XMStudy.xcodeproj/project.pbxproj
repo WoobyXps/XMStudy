@@ -13,6 +13,7 @@
 		0D074EC219D69DC40070283C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D074EC019D69DC40070283C /* Main.storyboard */; };
 		0D074EC419D69DC40070283C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D074EC319D69DC40070283C /* Images.xcassets */; };
 		0D074ED019D69DC40070283C /* XMStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D074ECF19D69DC40070283C /* XMStudyTests.m */; };
+		0D074EDE19D6A2070070283C /* XMCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D074EDD19D6A2070070283C /* XMCheckViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,15 @@
 		0D074EB819D69DC40070283C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D074EBA19D69DC40070283C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0D074EBB19D69DC40070283C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0D074EBD19D69DC40070283C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0D074EBE19D69DC40070283C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0D074EBD19D69DC40070283C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = XMStudy/ViewController.h; sourceTree = "<group>"; };
+		0D074EBE19D69DC40070283C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = XMStudy/ViewController.m; sourceTree = "<group>"; };
 		0D074EC119D69DC40070283C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D074EC319D69DC40070283C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D074EC919D69DC40070283C /* XMStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D074ECE19D69DC40070283C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D074ECF19D69DC40070283C /* XMStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMStudyTests.m; sourceTree = "<group>"; };
+		0D074EDC19D6A2070070283C /* XMCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCheckViewController.h; sourceTree = "<group>"; };
+		0D074EDD19D6A2070070283C /* XMCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMCheckViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,11 @@
 		0D074EAA19D69DC40070283C = {
 			isa = PBXGroup;
 			children = (
-				0D074EB519D69DC40070283C /* XMStudy */,
+				0D074EE319D6A31C0070283C /* XMStudyTools */,
+				0D074EE219D6A3080070283C /* XMStudyUI */,
+				0D074EE119D6A2EF0070283C /* XMStydyController */,
+				0D074EE019D6A2BD0070283C /* XMStudyView */,
+				0D074EB519D69DC40070283C /* XMStudyModel */,
 				0D074ECC19D69DC40070283C /* XMStudyTests */,
 				0D074EB419D69DC40070283C /* Products */,
 			);
@@ -76,17 +83,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D074EB519D69DC40070283C /* XMStudy */ = {
+		0D074EB519D69DC40070283C /* XMStudyModel */ = {
 			isa = PBXGroup;
 			children = (
 				0D074EBA19D69DC40070283C /* AppDelegate.h */,
 				0D074EBB19D69DC40070283C /* AppDelegate.m */,
-				0D074EBD19D69DC40070283C /* ViewController.h */,
-				0D074EBE19D69DC40070283C /* ViewController.m */,
 				0D074EC019D69DC40070283C /* Main.storyboard */,
 				0D074EC319D69DC40070283C /* Images.xcassets */,
 				0D074EB619D69DC40070283C /* Supporting Files */,
 			);
+			name = XMStudyModel;
 			path = XMStudy;
 			sourceTree = "<group>";
 		};
@@ -114,6 +120,38 @@
 				0D074ECE19D69DC40070283C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0D074EE019D6A2BD0070283C /* XMStudyView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XMStudyView;
+			sourceTree = "<group>";
+		};
+		0D074EE119D6A2EF0070283C /* XMStydyController */ = {
+			isa = PBXGroup;
+			children = (
+				0D074EDC19D6A2070070283C /* XMCheckViewController.h */,
+				0D074EDD19D6A2070070283C /* XMCheckViewController.m */,
+				0D074EBD19D69DC40070283C /* ViewController.h */,
+				0D074EBE19D69DC40070283C /* ViewController.m */,
+			);
+			name = XMStydyController;
+			sourceTree = "<group>";
+		};
+		0D074EE219D6A3080070283C /* XMStudyUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XMStudyUI;
+			sourceTree = "<group>";
+		};
+		0D074EE319D6A31C0070283C /* XMStudyTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = XMStudyTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D074EDE19D6A2070070283C /* XMCheckViewController.m in Sources */,
 				0D074EBF19D69DC40070283C /* ViewController.m in Sources */,
 				0D074EBC19D69DC40070283C /* AppDelegate.m in Sources */,
 				0D074EB919D69DC40070283C /* main.m in Sources */,
